@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <div class="task-form">
+        <input type="date" id="taskDate">
+        <input type="time" id="taskTime">
+        <input type="text" id="taskText" placeholder="Enter your task">
+        <button id="addTask">Add Task</button>
+    </div>
+    <div id="taskList"><h2>Pending Tasks</h2></div>
+    <!-- Add a Completed section -->
+    <div class="completed-section">
+        <h2>Completed Tasks</h2>
+        <div id="completedTaskList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

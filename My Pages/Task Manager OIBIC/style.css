@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+.task-form {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+#taskDate,
+#taskTime,
+#taskText {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.task-list-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.task-list-item .task-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list-item .task-actions button {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-list-item .task-date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
