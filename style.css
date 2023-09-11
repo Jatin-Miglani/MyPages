@@ -1,52 +1,79 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+/* Apply Hogwarts theme styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c3e50; /* Background color - Hogwarts blue */
+    color: #ecf0f1; /* Text color - Light gray */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }
 
-header h1 {
-    margin: 0;
+.header {
+    background-color: #c0392b; /* Header background color - Hogwarts red */
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 50px;
 }
 
-main {
-    padding: 20px;
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ecf0f1; /* Text color - Light gray */
+}
+
+.main {
+    margin-top: 20px;
+    text-align: center;
 }
 
 .options {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-a {
-    text-decoration: none;
-    color: #333;
-    background-color: #fff;
+.notes-option,
+.task-option {
+    background-color: #2980b9; /* Option background color - Hogwarts blue */
+    color: #ecf0f1; /* Option text color - Light gray */
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-a:hover {
-    background-color: #f0f0f0;
+.notes-option:hover,
+.task-option:hover {
+    background-color: #3498db; /* Option hover background color - Slightly lighter blue */
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-footer p {
-    margin: 0;
+p {
+    font-size: 18px;
+    text-align: center;
 }
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Add more styles as needed */

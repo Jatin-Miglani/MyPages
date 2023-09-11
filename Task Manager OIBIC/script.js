@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const addTaskButton = document.getElementById("addTask");
     const taskList = document.getElementById("taskList");
     const completedTaskList = document.getElementById("completedTaskList");
+    const userEmailInput = document.getElementById("userEmail"); // Added input for user's email
 
     let editingIndex = null; // Track the index of the task being edited
 
@@ -13,9 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const taskDate = taskDateInput.value;
         const taskTime = taskTimeInput.value;
         const taskText = taskTextInput.value;
+        const userEmail = userEmailInput.value; // Get the user's email
 
-        if (!taskDate || !taskTime || !taskText) {
-            alert("Please enter date, time, and task.");
+        if (!taskDate || !taskTime || !taskText || !userEmail) {
+            alert("Please enter date, time, task, and your email.");
             return;
         }
 
@@ -24,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             date: dateTime.toLocaleDateString(),
             time: dateTime.toLocaleTimeString(),
             text: taskText,
+            userEmail, // Store user's email with the task
             completed: false, // Initial state is not completed
         };
 
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         taskDateInput.value = "";
         taskTimeInput.value = "";
         taskTextInput.value = "";
+        userEmailInput.value = ""; // Clear the email input
     });
 
     function deleteTask(index) {
@@ -66,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
         taskDateInput.value = task.date;
         taskTimeInput.value = task.time;
         taskTextInput.value = task.text;
+        userEmailInput.value = task.userEmail; // Set the email input for editing
     }
 
     function toggleCompleted(index) {
