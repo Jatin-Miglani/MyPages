@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hogwarts Drawing App</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Hogwarts Drawing App</h1>
+    </header>
+    <div class="controls">
+        <div class="select-container">
+            <label for="colorSelect">Select Color:</label>
+            <select id="colorSelect">
+                <option value="#000">Black</option>
+                <option value="#ff0000">Red</option>
+                <option value="#00ff00">Green</option>
+                <option value="#0000ff">Blue</option>
+                <!-- Add more color options as needed -->
+            </select>
+        </div>
+        <div class="select-container">
+            <label for="fillColorSelect">Select Fill Color:</label>
+            <select id="fillColorSelect">
+                <option value="none">None</option>
+                <option value="#000">Black</option>
+                <option value="#ff0000">Red</option>
+                <option value="#00ff00">Green</option>
+                <option value="#0000ff">Blue</option>
+                <!-- Add more fill color options as needed -->
+            </select>
+        </div>
+        <button id="eraseButton" class="button">Eraser</button>
+        <button id="clearButton" class="button">Clear</button>
+        <button id="saveButton" class="button">Save Drawing</button>
+        <button id="loadButton" class="button">Load Drawing</button> <!-- Added Load Drawing button -->
+        <button id="fillButton" class="button">Fill</button>
+    </div>
+    <div class="drawing-container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div id="drawingsContainer" class="drawings-container"></div>
+    <!-- New container for previously stored drawings -->
+    <div id="previousDrawingsContainer" class="previous-drawings-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

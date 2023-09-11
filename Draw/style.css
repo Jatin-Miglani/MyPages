@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.pcinvasion.com/wp-content/uploads/2023/02/Hogwarts-Legacy-review-pc-.jpg?fit=1200%2C675'); /* Replace with your Hogwarts-themed background image */
+    background-size: cover;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Harry Potter', cursive; /* Add your chosen Hogwarts-themed font here */
+}
+
+.controls {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+}
+.select-container label{
+    color: #fff;
+}
+.select-container select {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.select-container select:hover {
+    border-color: #dcc3c3;
+    color: #dcc3c3;
+}
+
+.select-container select:focus {
+    outline: none;
+    border-color: #777;
+    color: #777;
+}
+
+.select-container::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: transform 0.3s;
+}
+
+.select-container:hover::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.drawing-container {
+    border: 2px solid #333;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+canvas {
+    cursor: crosshair;
+}
+
+.drawings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drawing-item {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.drawing-item img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.previous-drawings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.timestamp {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin: 5px 0;
+}
+
+
+/* Add your Hogwarts-themed styling here */
