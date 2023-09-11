@@ -1,16 +1,22 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-image: url('https://blog.playstation.com/tachyon/2022/05/87e42cf1164967ddd58b6385fac5f1c375e0c39d.jpg?resize=1088%2C612&crop_strategy=smart'); /* Hogwarts background image */
+    background-size: cover;
+    color: #fff; /* White text color */
+    background-attachment: fixed;
 }
 
 h1 {
-    color: #333;
+    color: #ffc800; /* Hogwarts gold color */
+    background-color: rgb(4, 4, 40,0.5);
+    padding: 20px 10px;
+    border-radius: 50px;
+    width: 50%;
 }
 
 .task-form {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -21,22 +27,32 @@ h1 {
 
 #taskDate,
 #taskTime,
-#taskText {
+#taskText,
+#userEmail {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for input fields */
 }
 
 button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #ffc800; /* Hogwarts gold color */
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d2a116; /* Darker gold color on hover */
 }
 
 .task-list-item {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
     padding: 10px;
     margin: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -52,12 +68,17 @@ button {
 }
 
 .task-list-item .task-actions button {
-    background-color: #ff3333;
+    background-color: #ff3333; /* Red color for buttons */
     color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-list-item .task-actions button:hover {
+    background-color: #d62c2c; /* Darker red color on hover */
 }
 
 .task-list-item .task-date {
