@@ -1,57 +1,107 @@
-/* styles.css */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-}
-
-h1 {
-    color: #333;
-}
-
-.note-form {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 400px;
-}
-
-#noteText {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-}
-
-.notes-container {
-    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://gamingtrend.com/wp-content/uploads/2023/02/vlcsnap-2023-02-05-20h28m15s134.jpg");
+    color: #ffffff;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.note-card {
-    background-color: #fff;
+/* Header Styles */
+.header {
+    background-color: #9d2235;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffc720;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Main Container Styles */
+.main-container {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+/* Note Form Styles */
+.note-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.note-input {
+    flex-grow: 2;
     padding: 10px;
-    margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
     border-radius: 5px;
-    width: 300px;
-    text-align: left;
+    font-size: 18px;
 }
 
-.note-date-time {
-    font-size: 12px;
-    font-style: italic;
-    color: #777;
-    margin-top: 5px;
+.note-button {
+    background-color: #ffc720;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.note-button:hover {
+    background-color: #9d2235;
+    color: #ffffff;
+}
+
+/* Notes Container Styles */
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.note-item {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-item p {
+    flex-grow: 2;
+    margin: 0;
+    font-size: 18px;
+}
+
+.note-item button {
+    background-color: #ffc720;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.note-item button:hover {
+    background-color: #9d2235;
+    color: #ffffff;
 }

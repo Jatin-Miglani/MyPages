@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Notes App</title>
+    <title>Hogwarts Notes</title>
 </head>
 <body>
-    <h1>My Notes</h1>
-    <div class="note-form">
-        <input type="text" id="noteText" placeholder="Enter your note">
-        <button onclick="saveNote()">Save</button>
-    </div>
-    <div id="notesList" class="notes-container"></div>
+    <br>
+    <header class="header">
+        <h1 class="header-title">Hogwarts Notes</h1>
+    </header>
+    <main class="main-container">
+        <div class="note-form">
+            <input type="text" id="noteText" class="note-input" placeholder="Enter your note">
+            <br>
+            <button onclick="saveNote()" class="note-button">Save</button>
+        </div>
+        <div id="notesList" class="notes-container"></div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
